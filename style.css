@@ -5,10 +5,13 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: repeat(16, 20px);
-    grid-template-columns: repeat(16, 20px);
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
 
-    margin-top: 2rem;
+    width: 500px;
+    height: 500px;
+
+    margin: 15rem auto;
 
     justify-content: center;
 }
@@ -17,3 +20,9 @@ body {
     border: 1px solid black;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
