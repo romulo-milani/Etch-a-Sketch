@@ -30,10 +30,8 @@ function changeColor(e) {
 }
 
 function clearGrid(e) {
-    const div = document.querySelectorAll('.son');
-    for (let i=0; i<choice*choice; i++) {
-        div[i].style.backgroundColor = 'white';
-    }
+    const object = document.querySelectorAll('.son');
+    object.forEach(e => e.style.backgroundColor = '#ffffff');    
 }
 
 function remove() {
